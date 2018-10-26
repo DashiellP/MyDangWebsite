@@ -16,9 +16,8 @@ h1
 }
 
 div.box {
-    color: #ffebfa;
-    width: 95%;
-    height: 3000px;
+    color: currentColor;
+    background-color: white;
     padding: 8px 16px;
     margin: 10px;
     border: 2px solid #98579b;
@@ -64,6 +63,11 @@ ul.navbar > li a.active {
 
 ul.navbar > li a.active:hover {
     background-color: #864664;
+}
+
+ul.navbar > li a.dropdown:hover {
+    background-color: #864664;
+    
 }
 
 table {
