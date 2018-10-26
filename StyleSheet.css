@@ -4,6 +4,10 @@ body {
     margin: 0;
 }
 
+img.banner {
+    width:100%;
+}
+
 h1 
 {
     font-family: Arial;
@@ -16,8 +20,8 @@ div.box {
     width: 95%;
     height: 3000px;
     padding: 8px 16px;
-    margin:auto;
-    border: 2px solid #C088A2;
+    margin: 10px;
+    border: 2px solid #98579b;
     border-radius: 5px;
 }
 
