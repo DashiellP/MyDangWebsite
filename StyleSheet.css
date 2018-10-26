@@ -2,42 +2,74 @@ body {
     background-color: #fff0f0;
     color: #C088A2;
     margin: 0;
+    font-family: Arial;
 }
 
 img.banner {
+    float:left;
+    clear:right;
     width:100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    z-index: 99;
+}
+
+.clearfix {
+    overflow: auto;
 }
 
 h1 
 {
-    font-family: Arial;
     font-weight: bold;
     color: #C088A2;
 }
 
-div.box {
+div.textbox {
     color: currentColor;
     background-color: white;
-    padding: 8px 16px;
-    margin: 10px;
+    padding: 16px;
+    margin: auto;
+    width: 80%;
     border: 2px solid #98579b;
     border-radius: 5px;
 }
 
+div.container {
+    position: relative;
+    display: block;
+}
+
+a.nameTitle {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 2.25em;
+    text-decoration: none;
+    color:white;
+    display:inline;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+
 ul.navbar {
+    display:inline;
     list-style-type: none;
     padding: 0px;
     margin: 0px;
     overflow: hidden;
-    background-color: #9b5777;
-    position: sticky;
-    top: 0;
+    background-color: rgba(0,0,0,0);
+    position: absolute;
+    right: 30px;
+    top: 10px;
     z-index: 100;
 }
 
 ul.navbar > li {
-    float: left;
-    border-right: 1px solid #8b4566;
+    float:left;
+    border-right: 1px solid rgba(255, 255, 255, 0.56);
 }
 
 ul.navbar > li:last-child {
@@ -51,33 +83,22 @@ ul.navbar > li a {
     padding: 10px 12px;
     text-decoration: none;
     font-weight: bold;
+    margin-left: auto;
+    width: auto;
 }
 
 ul.navbar > li a:hover {
-    background-color: #864664;
+    background-color: rgba(86,46,64,0.75);
 }
 
 ul.navbar > li a.active {
-    background-color: #98579b;
+    background-color: rgba(98,57,155,0.75);
 }
 
 ul.navbar > li a.active:hover {
-    background-color: #864664;
+    background-color: rgba(86,46,64,0.75);
 }
 
 ul.navbar > li a.dropdown:hover {
-    background-color: #864664;
-    
-}
-
-table {
-    border-top: 1px solid currentColor;
-    border-collapse: collapse;
-    width: 50%;
-}
-
-td, th {
-    text-align: left;
-    padding: 15px;
-    border-bottom: 1px solid currentColor;
+    background-color: #864664;   
 }
