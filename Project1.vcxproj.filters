@@ -21,6 +21,9 @@
     <None Include="index.htm">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="Projects.htm" />
+    <None Include="Resume.htm" />
+    <None Include="Contact.htm" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.js">

@@ -41,8 +41,7 @@ h1
 
 div.textbox {
     width: 80%;
-    margin: auto;
-    margin-top: 10px;
+    margin: 10px auto 20px auto;
 }
 
 div.textbox-title {
@@ -58,6 +57,7 @@ div.textbox-content {
     padding: 16px;
     border: 2px solid #9c607c;
     border-radius: 5px;
+    white-space: pre-line
 }
 
 div.container {

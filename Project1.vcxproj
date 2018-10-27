@@ -23,6 +23,7 @@
     <ProjectGuid>{86B60363-FBA8-4118-9345-51C26025C704}</ProjectGuid>
     <RootNamespace>Project1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <ProjectName>PersonalWebsite</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -115,7 +116,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="Contact.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Projects.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
     <None Include="index.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Resume.htm">
       <DeploymentContent>true</DeploymentContent>
     </None>
     <None Include="StyleSheet.css" />
