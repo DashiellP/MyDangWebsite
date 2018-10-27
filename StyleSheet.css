@@ -10,13 +10,22 @@ img.banner {
     clear:right;
     width:100%;
     margin: 0;
-    padding: 0;
+    padding-bottom:5%;
     overflow: auto;
-    z-index: 99;
 }
 
 .clearfix {
     overflow: auto;
+}
+
+.parallax {
+    background-image: url("Images/Banner3.png");
+    min-height: 417px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 
@@ -26,17 +35,29 @@ h1
 }
 
 div.textbox {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+div.textbox-title {
+    color: #C088A2;
+    font-family: Arial;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+div.textbox-content {
     color: currentColor;
     background-color: white;
     padding: 16px;
-    margin: auto;
-    width: 80%;
     border: 2px solid #98579b;
     border-radius: 5px;
 }
 
 div.container {
-    position: relative;
+    position: sticky;
+    top: 0;
     display: block;
 }
 
@@ -45,7 +66,7 @@ a.nameTitle {
     font-weight: bold;
     font-size: 2.25em;
     text-decoration: none;
-    color:white;
+    color:#e249f4;
     display:inline;
     padding: 0px;
     margin: 0px;
@@ -59,12 +80,11 @@ ul.navbar {
     list-style-type: none;
     padding: 0px;
     margin: 0px;
+    position: absolute;
     overflow: hidden;
     background-color: rgba(0,0,0,0);
-    position: absolute;
     right: 30px;
     top: 10px;
-    z-index: 100;
 }
 
 ul.navbar > li {
@@ -88,7 +108,7 @@ ul.navbar > li a {
 }
 
 ul.navbar > li a:hover {
-    background-color: rgba(86,46,64,0.75);
+    background-color: rgba(176, 49, 192, 0.75);
 }
 
 ul.navbar > li a.active {
@@ -100,5 +120,5 @@ ul.navbar > li a.active:hover {
 }
 
 ul.navbar > li a.dropdown:hover {
-    background-color: #864664;   
+    background-color: #864664;  
 }
