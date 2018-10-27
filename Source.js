@@ -1,3 +1,3 @@
-function what(id) {
-	document.getElementById(id).innerText = "what";
+function makeSticky(id) {
+	document.getElementById(id).style.position = "sticky";
 }

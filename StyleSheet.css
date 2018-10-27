@@ -2,16 +2,21 @@ body {
     background-color: #fff0f0;
     color: #C088A2;
     margin: 0;
+    margin-top: 10%;
     font-family: Arial;
 }
 
-img.banner {
+.banner {
     float:left;
     clear:right;
     width:100%;
     margin: 0;
+    margin-top:-10%;
     padding-bottom:5%;
     overflow: auto;
+    position: fixed;
+    border: 1px solid #864664;
+    background-color: #864664;
 }
 
 .clearfix {
@@ -51,12 +56,11 @@ div.textbox-content {
     color: currentColor;
     background-color: white;
     padding: 16px;
-    border: 2px solid #98579b;
+    border: 2px solid #9c607c;
     border-radius: 5px;
 }
 
 div.container {
-    position: sticky;
     top: 0;
     display: block;
 }
@@ -66,13 +70,15 @@ a.nameTitle {
     font-weight: bold;
     font-size: 2.25em;
     text-decoration: none;
-    color:#e249f4;
+    color:white;
     display:inline;
     padding: 0px;
     margin: 0px;
+    margin-top: 6%;
     position: absolute;
-    left: 15px;
-    top: 10px;
+    left: 4%;
+    top: 0;
+    overflow:hidden;
 }
 
 ul.navbar {
@@ -108,15 +114,15 @@ ul.navbar > li a {
 }
 
 ul.navbar > li a:hover {
-    background-color: rgba(176, 49, 192, 0.75);
+    background-color: rgba(176, 123, 148, 0.75);
 }
 
 ul.navbar > li a.active {
-    background-color: rgba(98,57,155,0.75);
+    background-color: rgba(156, 96, 124, 0.75);
 }
 
 ul.navbar > li a.active:hover {
-    background-color: rgba(86,46,64,0.75);
+    background-color: rgba(176, 123, 148, 0.75);
 }
 
 ul.navbar > li a.dropdown:hover {
