@@ -6,17 +6,29 @@ body {
     font-family: Arial;
 }
 
-.banner {
-    float:left;
-    clear:right;
+img.banner {
     width:100%;
+    height:1000%;
     margin: 0;
-    margin-top:-10%;
-    padding-bottom:5%;
+    /*margin-top:-10%;
+    padding-bottom:5%;*/
+    float:left;
     overflow: auto;
-    position: fixed;
+    position: absolute;
     border: 1px solid #864664;
     background-color: #864664;
+    bottom:0;
+}
+
+div.banner-sticker {
+    width:100%;
+    height:10%;
+    margin:0;
+    margin-top: 30%;
+    position:sticky;
+    top:0;
+    display:block;
+    overflow:visible;
 }
 
 .clearfix {
@@ -74,9 +86,9 @@ a.nameTitle {
     display:inline;
     padding: 0px;
     margin: 0px;
-    margin-top: 6%;
+    margin-top: 1%;
     position: absolute;
-    left: 4%;
+    left: 3%;
     top: 0;
     overflow:hidden;
 }
@@ -89,7 +101,7 @@ ul.navbar {
     position: absolute;
     overflow: hidden;
     background-color: rgba(0,0,0,0);
-    right: 30px;
+    right: 3%;
     top: 10px;
 }
 
