@@ -23,6 +23,7 @@ div.header-sticker {
     margin-top: 10%;
     border-bottom: 3px solid #864664;
     position: -webkit-sticky;
+    position: sticky;
     top: 0;
     display: block;
     overflow-y: visible;
