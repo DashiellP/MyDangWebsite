@@ -20,7 +20,7 @@ div.header-sticker {
     width: 100%;
     height: 10%;
     margin: 0;
-    margin-top: 10%;
+    margin-top: 34%;
     border-bottom: 3px solid #864664;
     position: -webkit-sticky;
     position: sticky;
@@ -80,7 +80,7 @@ div.textbox-content {
     padding: 16px;
     border: 2px solid #9c607c;
     border-radius: 5px;
-    white-space: pre-line
+    white-space: pre-line;
 }
 
 div.container {
