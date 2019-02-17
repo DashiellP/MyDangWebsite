@@ -46,7 +46,7 @@ function setItemBoxWidths()
 function handleResize()
 {
     var viewport = document.getElementById("viewport");
-    //setBannerMargin();
+    setBannerMargin();
     //setItemBoxWidths();
 }
 
