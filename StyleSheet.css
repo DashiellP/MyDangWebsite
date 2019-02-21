@@ -63,10 +63,6 @@ h1 {
     color: #C088A2;
 }
 
-.container {
-    margin: 0 10%;
-}
-
 div.textbox {
     width: 100%;
     margin: 10px auto 20px auto;
@@ -92,7 +88,7 @@ div.textbox {
 
 div.page-content-wrapper {
     top: 0;
-    display: block;
+    margin: 0 10%;
 }
 
 div.item-box-container {

@@ -24,6 +24,8 @@
     <None Include="Projects.htm" />
     <None Include="Resume.htm" />
     <None Include="Contact.htm" />
+    <None Include="HTMLPage.htm" />
+    <None Include="JSTest.js" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.js">

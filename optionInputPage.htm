@@ -1,0 +1,58 @@
+<HTML>
+<HEAD>
+    <META NAME="GENERATOR" Content="Microsoft Visual Studio">
+    <TITLE></TITLE>
+    <script src="DesignInput2.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</HEAD>
+<BODY>
+    <button onclick="addVariant()">TEST</button>
+    <div style="display:inline-block; position:relative; width:250px; max-width:250px">
+        <div id="obj-option-input" oninput="updateOptionsDisplay()">
+            <div>
+                <span>width: </span>
+                <input type="number" min="0.1" max="4" value="1" step="0.1" id="obj-width-input" oninput="handleSizeChange(this)" style="display:inline" />
+            </div>
+            <div>
+                <span>height: </span>
+                <input type="number" min="0.1" max="4" value="1" step="0.1" id="obj-height-input" oninput="handleSizeChange(this)" style="display:inline" />
+            </div>
+            <div>
+                <span>Size: </span>
+                <span id="obj-size-display"></span>
+            </div>
+            <select id="obj-gauge-input" style="display:block">
+                <option value="18" class="obj-material-option" selected>18 gauge</option>
+                <option value="20" class="obj-material-option">20 gauge</option>
+                <option value="22" class="obj-material-option">22 gauge</option>
+                <option value="24" class="obj-material-option">24 gauge</option>
+            </select>
+            <select id="obj-material-input" style="display:block">
+                <option value="Aluminum" class="obj-material-option" selected></option>
+                <option value="Silver" class="obj-material-option"></option>
+                <option value="Gold" class="obj-material-option"></option>
+                <option value="Rose Gold" class="obj-material-option"></option>
+            </select>
+            <div id="obj-unit-price-display"></div>
+            <div>
+                <span>Blanks per sheet: </span>
+                <span id="number-per-sheet"></span>
+            </div>
+            <div>
+                <span>Number of sheets: </span>
+                <input type="number" min="1" max="5" value="1" step="1" id="obj-quantity-input" style="display:inline" />
+            </div>
+        </div>
+        <div id="obj-total-price-display"></div>
+    </div>
+    <div id="file-drop-area" style="display:inline-block; position:absolute">
+        <canvas id="design-display-canvas" height="400" width="400" style="border:1px solid #000000;display:inline"></canvas>
+        <br />
+        <input id="design-upload" type="file" accept=".svg" onchange="loadDesign(this.files[0])" />
+    </div>
+    <svg id="design-svg">
+        <image height="100" width="100" xlink:href="HeartBlank.svg"></image>
+    </svg>
+</BODY>
+</HTML>
+

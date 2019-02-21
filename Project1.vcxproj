@@ -119,6 +119,10 @@
     <None Include="Contact.htm">
       <DeploymentContent>true</DeploymentContent>
     </None>
+    <None Include="HTMLPage.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="JSTest.js" />
     <None Include="Projects.htm">
       <DeploymentContent>true</DeploymentContent>
     </None>
