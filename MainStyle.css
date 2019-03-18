@@ -1,0 +1,179 @@
+html 
+{
+    height: 100%;
+}
+
+body 
+{
+    background: rgb(227, 244, 253);
+    margin: 0;
+    height: 100%;
+}
+
+.page-content-wrapper 
+{
+    background: white;
+    margin: 0 200px 0 0;
+    min-height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+}
+
+.side-bar
+{
+    background: rgb(158, 94, 167);
+    color: white;
+    width: 200px;
+    min-height: 100%;
+    z-index: 1;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.page-header 
+{
+    margin-left: 250px;
+    position: relative;
+}
+
+.page-header h1 
+{
+    margin: 0;
+}
+
+.page-body
+{
+    margin: 0 250px;
+    position: relative;
+}
+
+.page-footer 
+{
+    margin-left: 250px;
+    position: relative;
+}
+
+.window-pane 
+{
+    height: 400px;
+    margin: 0;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    background-clip: padding-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.window-pane__outer-page
+{
+    background: white;
+    border: 1px solid none;
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;   
+    box-shadow: -10px 0px 15px 0px rgba(0, 0, 0, 0.322);
+}
+
+.window-pane__inner-page
+{
+    background: rgb(128, 128, 128);
+    border: 1px solid none;
+    border-radius: inherit;
+    color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    box-shadow: inset 2px 2px 25px 0px rgba(0, 0, 0, 0.432);
+    overflow: hidden;
+}
+
+.window-pane__content 
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.window-pane__outer-page .window-pane__content 
+{
+    margin: 0px;
+}
+
+.window-pane__inner-page .window-pane__content 
+{
+    margin: 10px;
+}
+
+.window-pane__content .project-image-wrapper
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.window-pane__outer-page .project-image-wrapper
+{
+    height: 100%;
+    margin: auto 0;
+}
+
+
+.window-pane__inner-page .project-image-wrapper
+{
+    height: 100%;
+    width: 48%;
+    float:right;
+    text-align: center;
+}
+
+.window-pane__inner-page .project-extra-info 
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-height: 25%;
+    width: 100%;
+    border-top: 1px solid rgb(105, 105, 105);
+    padding-top: 10px;
+}
+
+.window-pane__content .project-image-wrapper .project-image 
+{
+    border: 1px solid none;
+    border-radius: 3px;
+    max-width: 100%;
+    margin: auto 0;
+    overflow:hidden;
+}
+
+.window-pane__inner-page .project-image 
+{
+    max-height: 70%;
+}
+
+.window-pane__content .project-description 
+{
+    display: inline-block;
+    position: relative;
+    border-right: 1px solid rgb(105, 105, 105);
+    height: 100%;
+    width: 48%;
+    margin: 0;
+}
+
+.window-pane__inner-page .window-pane__content .project-description 
+{
+    color: white;
+}
+
+.window-pane__inner-page .window-pane__content h1
+{
+    display: inline-block;
+}
