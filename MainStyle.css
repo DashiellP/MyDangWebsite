@@ -55,13 +55,12 @@ body
 
 .window-pane 
 {
-    height: 400px;
-    max-width: 711px;
+    height: 470px;
+    max-width: 100%;
     margin: 0;
     border: 2px solid rgb(235, 235, 235);
     border-radius: 10px;
     background: transparent;
-    cursor: pointer;
     background-clip: padding-box;
     overflow: hidden;
     position: relative;
@@ -78,6 +77,7 @@ body
     z-index: 1;
     overflow: hidden;   
     box-shadow: -10px 0px 15px 0px rgba(0, 0, 0, 0.322);
+    cursor: pointer;
 }
 
 .window-pane__inner-page
@@ -109,7 +109,7 @@ body
 
 .window-pane__inner-page .window-pane__content 
 {
-    margin: 10px;
+    margin: 10px 30px 10px 10px;
 }
 
 .window-pane__content .project-image-wrapper
@@ -137,12 +137,12 @@ body
 
 .window-pane__inner-page .project-extra-info 
 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: relative;
+    display: block;
     min-height: 25%;
     width: 100%;
     border-top: 1px solid rgb(105, 105, 105);
+    margin-top: 30px;
     padding-top: 10px;
 }
 
@@ -150,7 +150,7 @@ body
 {
     border: 1px solid none;
     border-radius: 3px;
-    margin: auto 0;
+    margin: auto;
     overflow:hidden;
 }
 
@@ -163,6 +163,7 @@ body
 {
     max-height: 70%;
     max-width: 100%;
+    display: block;
 }
 
 .window-pane__content .project-description 

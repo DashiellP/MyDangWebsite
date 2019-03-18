@@ -3,7 +3,7 @@ var dir = 1;
 
 $(document).ready(function ()
 {
-    $(".window-pane").on('click', function ()
+    $(".window-pane__outer-page").on('click', function ()
     {
         toggleOpen($(this));
     });
@@ -13,26 +13,26 @@ function toggleOpen(selector)
 {
     var direction;
     var openFraction;
-    var topPage = selector.children(".window-pane__outer-page");
     var animTime = 1000;
-    if (selector.hasClass("window-pane--open"))
+    var hangDistance = 20;
+    if (selector.parent().hasClass("window-pane--open"))
     {
-        selector.removeClass("window-pane--open");
-        selector.addClass("window-pane--closed");
+        selector.parent().removeClass("window-pane--open");
+        selector.parent().addClass("window-pane--closed");
         direction = 0;
     }
-    else if (selector.hasClass("window-pane--closed"))
+    else if (selector.parent().hasClass("window-pane--closed"))
     {
-        selector.removeClass("window-pane--closed");
-        selector.addClass("window-pane--open");
+        selector.parent().removeClass("window-pane--closed");
+        selector.parent().addClass("window-pane--open");
         direction = 1;
     }
     else
     {
         return;
     }
-    topPage.stop();
-    openFraction = topPage.position().left / topPage.innerWidth();
+    selector.stop();
+    openFraction = selector.position().left / (selector.innerWidth() - hangDistance);
     animTime = (animTime * (direction ? 1 - openFraction : openFraction));
-    topPage.animate({ left: direction * topPage.innerWidth() }, animTime);
+    selector.animate({ left: direction * (selector.innerWidth()-hangDistance) }, animTime);
 }
