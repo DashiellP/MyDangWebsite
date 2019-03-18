@@ -14,7 +14,7 @@ function toggleOpen(selector)
     var direction;
     var openFraction;
     var topPage = selector.children(".window-pane__outer-page");
-    var animTime = 1500;
+    var animTime = 1000;
     if (selector.hasClass("window-pane--open"))
     {
         selector.removeClass("window-pane--open");
