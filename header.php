@@ -24,7 +24,7 @@
                     <a class='navbar-link' href='/about'>About Me</a>
                     <a class='navbar-link' href='/projects'>My Projects</a>
                     <a class='navbar-link' href='/contact'>Contact</a>
-                    <a class='navbar-link' href='/Documents/Resume.pdf' target="_blank">Resume</a>
+                    <a class='navbar-link' href='/Documents/DashiellPowersResume.pdf' target="_blank">Resume</a>
                 </h3>
             </div>
         </div>
